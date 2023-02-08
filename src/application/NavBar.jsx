@@ -12,10 +12,10 @@ function NavBar() {
                 <Collapse isOpen={navToggle} navbar>
                     <Nav className="ml-auto" navbar pills tabs fill>
                         <NavItem active>
-                            <StyledNavLink to='/'>Home</StyledNavLink>
+                            <StyledNavLink to='/fair-app/'>Home</StyledNavLink>
                         </NavItem>
                         <NavItem>
-                            <StyledNavLink to='/info'>Info</StyledNavLink>
+                            <StyledNavLink to='/fair-app/info'>Info</StyledNavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

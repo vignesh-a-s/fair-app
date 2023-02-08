@@ -5,8 +5,8 @@ import InfoPage from '../pages/Info';
 function RouteServices () {
     return (
         <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/info' element={<InfoPage />} />
+            <Route path='/fair-app/' element={<HomePage />} />
+            <Route path='/fair-app/info' element={<InfoPage />} />
         </Routes>
     );
 }
