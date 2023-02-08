@@ -21,13 +21,13 @@ export const PaperModal = ({modal, toggle, name, type, description}) => {
         <Modal isOpen={modal} toggle={toggle}>
           <ModalHeader toggle={toggle}>Paper Details</ModalHeader>
           <ModalBody>
-            <p>
+            <div>
                 <ul>
                     <li><b>Name:</b> {name}</li>
                     <li><b>Type:</b> {type}</li>
                     <li><b>Description:</b> {description}</li>
                 </ul>
-            </p>
+            </div>
           </ModalBody>
           <ModalFooter>
             <Button color="secondary" onClick={toggle}>Cancel</Button>
@@ -41,7 +41,7 @@ function PaperList({numPapers=5, modal, toggle, selectedItem, selectItem}) {
     let papers = utils.generatePapers(numPapers);
 
     let papersList = papers.map((paper) => (
-        <ListGroupItem style={{
+        <ListGroupItem key={['listItem', paper.name].join(':')} style={{
             display: 'block',
             width: '100%',
         }}>

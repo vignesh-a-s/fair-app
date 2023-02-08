@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "reactstrap";
 
 const APP_CONTAINER_SIZE = 800;
-const APP_CONTAINER_MIN_SIZE = 500;
+const APP_CONTAINER_MIN_SIZE = 300;
 
 export const AppContainer = styled.div`
     margin: auto;
